@@ -1,5 +1,5 @@
 # Counter-UAS Radar: Detection & Multi-Target Tracking of Small Drones
-
+   ![tests](https://github.com/apalangala/cuas-radar-tracker/actions/workflows/ci.yml/badge.svg)
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2016b%2B-orange) ![Toolboxes](https://img.shields.io/badge/toolboxes-none-blue) ![Octave](https://img.shields.io/badge/GNU%20Octave-compatible-lightgrey) ![License](https://img.shields.io/badge/license-MIT-green)
 
 This is an end-to-end simulation of a short-range **X-band FMCW radar** that finds and tracks small drones in ground clutter. It runs from raw beat signal, through Doppler processing, clutter cancellation, CFAR detection and array angle estimation, to a **multi-target Extended Kalman Filter tracker**. Everything is checked with Monte Carlo statistics and automated tests.
