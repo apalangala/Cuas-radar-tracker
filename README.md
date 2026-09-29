@@ -142,8 +142,7 @@ Figures are written to `docs/img/`. Every run is seeded, so the results are repr
 │   └── viz/                 figures and GIF
 ├── tests/                   automated test suite (run_tests)
 ├── docs/
-│   ├── DESIGN.md            design rationale, link budget, equations
-│   └── INTERVIEW_PREP.md    questions this project invites, with answers
+│   └── DESIGN.md            design rationale, link budget, equations
 └── .github/workflows/ci.yml runs the tests on every push
 ```
 
