@@ -148,13 +148,7 @@ Figures are written to `docs/img/`. Every run is seeded, so the results are repr
 
 ## Limitations and next steps
 
-The simulation makes simplifying assumptions: point targets, 2-D (azimuth only), no multipath, and ideal hardware. Next steps, in order:
-
-- [ ] **IMM filter** (constant-velocity + coordinated-turn models) to fix the consistency problem above
-- [ ] **Micro-Doppler signatures** from rotor blades, for drone vs bird classification
-- [ ] **Hungarian / JPDA association** and a two-drone formation scenario
-- [ ] **Elevation** with a 2-D array, for 3-D tracks
-- [ ] **Real data:** validate the processing chain on a TI mmWave radar dev kit
+This is a simulation with simplifying assumptions: drones are single points, it works in 2-D only, and the hardware is ideal. The next thing I want to add is an IMM filter, to fix the consistency problem in section 5.
 
 ## References
 
