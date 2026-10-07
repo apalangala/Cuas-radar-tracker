@@ -103,7 +103,7 @@ It doesn't always. The crossing drone sits *below* the band: the filter is under
 
 ## Engineering decisions and what went wrong
 
-1. **A CFAR bug that cost 5.5 dB.** The textbook CA-CFAR threshold assumes single-channel (exponential) noise. Summing 8 array channels makes the noise Gamma(8)-distributed, so the real false-alarm rate was about **10⁻³⁰ instead of 10⁻⁵**, and the smallest drone disappeared. I derived the correct threshold, solved it numerically, and added a test that measures Pfa.
+1. **A CFAR bug that cost 5.5 dB.** The textbook CA-CFAR threshold assumes single-channel (exponential) noise. Summing 8 array channels makes the noise Gamma(8)-distributed, so the real false-alarm rate was about **10⁻³⁰ instead of 10⁻⁵** and the smallest drone disappeared. I derived the correct threshold and solved it numerically and added a test that measures Pfa.
 
 2. **Redesigning the waveform around the blind zone.** With 64 chirps, velocity resolution was 3.9 m/s, so the MTI blind zone was ±6 m/s wide and the crossing drone vanished for 5 s. I traded unneeded max velocity (±125 m/s) for a longer dwell: **4× finer resolution**, 3 dB more gain, and a blind zone of ±1.5 m/s.
 
