@@ -4,7 +4,7 @@
 
 This is an end-to-end simulation of a short-range **X-band FMCW radar** that finds and tracks small drones in ground clutter. It runs from raw beat signal, through Doppler processing, clutter cancellation, CFAR detection and array angle estimation, to a **multi-target Extended Kalman Filter tracker**. Everything is checked with Monte Carlo statistics and automated tests.
 
-Every algorithm is written from scratch in plain MATLAB with **no toolboxes**, so each line can be explained.
+Every algorithm is written from scratch in plain MATLAB with **no toolboxes**.
 
 <p align="center"><img src="docs/img/tracking.gif" width="560" alt="Tracker animation"></p>
 
