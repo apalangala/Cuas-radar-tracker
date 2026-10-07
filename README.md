@@ -159,3 +159,5 @@ This is a simulation with simplifying assumptions: drones are single points, it 
 
 ---
 *Author: Agastya, Engineering, The University of Sydney. MIT licence.*
+
+*Built with AI assistance: Claude was used for debugging.*
