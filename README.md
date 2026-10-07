@@ -148,7 +148,7 @@ Figures are written to `docs/img/`. Every run is seeded, so the results are repr
 
 ## Limitations and next steps
 
-This is a simulation with simplifying assumptions: drones are single points, it works in 2-D only, and the hardware is ideal. The next thing I want to add is an IMM filter, to fix the consistency problem in section 5.
+This is a simulation with simplifying assumptions: drones are single points, it works in 2-D only and the hardware is ideal. The next thing I want to add is an IMM filter, to fix the consistency problem in section 5.
 
 ## References
 
