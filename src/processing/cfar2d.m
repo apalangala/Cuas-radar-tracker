@@ -12,7 +12,7 @@ function [det_mask, threshold, noise_est] = cfar2d(P, guard, train, Pfa, n_int)
 %   Threshold: under noise only, a cell that sums n_int channels is
 %   Gamma(n_int)-distributed, NOT exponential.  Using the textbook
 %   single-channel formula here would put the real Pfa near 1e-30 and throw
-%   away ~10 dB of sensitivity.  So we solve
+%   away ~5.5 dB of sensitivity.  So we solve
 %       P( Gamma(n_int, 1) > alpha * n_int ) = Pfa
 %   for alpha.  (With ~250 training cells the CA estimation loss is < 0.2 dB
 %   and is ignored.)
