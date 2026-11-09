@@ -1,8 +1,7 @@
 # Design notes
 
-This document explains *why* each part of the system is the way it is. The README shows what it does. Numbers refer to the default `radar_params.m`.
+These notes explain why each part of the system is built the way it is. The README covers what it does. Numbers refer to the default `radar_params.m`.
 
----
 
 ## 1. Mission and requirements
 
@@ -63,7 +62,7 @@ In one test frame this cuts the detections from 53 to 3.
 ### 4.2 Range-Doppler map
 A Hann window is applied in both dimensions (−31 dB sidelobes, which keep clutter sidelobes from masking drones), followed by a range FFT and a Doppler FFT. The power is then summed across the 8 elements (non-coherent integration).
 
-### 4.3 CFAR: the non-obvious bit
+### 4.3 CFAR threshold
 Cell-averaging CFAR estimates the local noise from training cells and multiplies it by a factor α. The textbook formula α = N(Pfa^(−1/N) − 1) assumes each cell is **exponential**, i.e. one channel. This map sums 8 channels, so noise-only cells are **Gamma(8)**-distributed and much less spread out.
 
 | Threshold choice | α | True Pfa |
@@ -126,7 +125,7 @@ The tracker knows where the MTI blind zone is. If a confirmed track's predicted 
 
 ## 7. Assumptions and limitations
 
-The limitations are stated openly, because they are the obvious next steps:
+Main limitations:
 
 - Point targets with no micro-Doppler signature (so no drone vs bird classification yet)
 - 2-D only: azimuth, no elevation
